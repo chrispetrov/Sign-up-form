@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 30%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1464809142576-df63ca4ed7f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+div{
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+}
