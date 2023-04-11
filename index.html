@@ -2,17 +2,71 @@
     <head>
         <title> Sign up page</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');
+          </style>
+          <script>
+            function matchpass(){
+                var one=document.getElementsByClassName('pass');
+                console.log(one[0].value);
+                console.log(one[1].value);
+                if(one[0].value!=one[1].value){
+                    alert("Passwords dont match");
+                }
+                else{
+                    alert("Password created");
+                }
+            }
+          </script>
     </head>
     <body>
         <div class="left">
-            <section><h1>Cat fax</h1></section>
+            <section><h1>Cat form</h1><img src="catlogo.png"></section>
             <footer>Image by Dalien Burka on Unslplash</footer>
                 
             
         </div>
         <div class="right">
             <form>
-
+                <div class="info"><p>One of the best companions for life, a cat! So why don't you share your favorite things about your favorite pet down below. 
+                     </p>
+                     <p>Don't worry, your cat's secrets are safe with us.</p>
+                    <p><i>Cat photos are welcome!</i></p>
+                </div>
+                <div class="input">
+                    <h2>Enter your cats info</h2>
+                    <div class="first">
+                        <div class="in">
+                            <label>First Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="in">
+                            <label>Last Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="in"> 
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="in">
+                            <label>Phone Number</label>
+                            <input type="text" pattern="[0-9]{9}" minlength="1" maxlength="9" required>
+                        </div>
+                        <div class="in">
+                            <label>Password</label>
+                            <input class="pass" type="password" minlength="4" maxlength="9" required>
+                        </div>
+                        <div class="in">
+                            <label>Confirm Password</label>
+                            <input class="pass" type="password" minlength="4" maxlength="9" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit" onclick="matchpass()">Sign up your feline</button>
+                    <button type="reset">Reset</button>
+                    <input type="file">
+                </div>
             </form>
         </div>
     </body>
